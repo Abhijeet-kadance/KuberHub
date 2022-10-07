@@ -103,10 +103,8 @@ if DB_IS_AVIAL and POSTGRES_READY:
             'NAME':DB_DATABASE,
             'USER':DB_USERNAME,
             'PASSWORD':DB_PASSWORD,
-            'PASSWORD':os.environ.get("POSTGRES_PASSWORD"),
-            'HOST':os.environ.get("POSTGRES_HOST"),
+            'HOST':DB_HOST,
             'PORT':DB_PORT
-            
         }
     }
 
